@@ -192,49 +192,58 @@ footer{
     background-color: #474747;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
     padding:0 10%;
 }
-footer>div{
+footer a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.04rem;
+}
+.footer-links{
     display: flex;
     flex-direction: column;
-    align-self: center;
-    margin: 5% 0;
+    justify-content: center;
+    margin: 1rem 0;
 }
-footer .socialMedia{
-    display: flex;
+.footer-links a:nth-of-type(1){
+    order: 1;
 }
-footer .socialMedia a{
-    margin: 0 1rem 0 0;
+.footer-links a:nth-of-type(2){
+    order: 2;
 }
-footer .socialMedia img{
-    width:100%;
-    height: auto;
+.footer-links>a{
+    padding: 0.25rem 0.35rem;
+    border-left: #fff solid 2px;
 }
-footer .contactLinks{
-    margin:0.5rem 0 0 0;
+.socialMedia {
+    order: 0;
+    margin-bottom: 0.25rem;
 }
-footer .contactLinks>a{
-    font-weight: 200;
-    color:#fff;
-    text-decoration: none;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    border-left: #fff solid 1.5px;
-    padding: 0 1rem 0 0.5rem;
-    transition: all 2s ease-in-out;
+.socialMedia .soMe-link{
+    display: none;
 }
-footer .contactLinks a:hover{
-    text-decoration: underline;
+.socialMedia .soMe-icon a{
+    width: 50%;
 }
-footer .copyRight p{
-    text-transform: uppercase;
-    margin:0;
-    font-size: 0.65rem;
-    text-align: right;
+.socialMedia .soMe-icon a img{
+    width: 100%;
+    margin: 0 auto;
 }
+.copyRight{
+   text-align: right;
+   align-self: center;
+}
+.copyRight p{
+   text-transform: uppercase;
+   font-size: 0.75rem;
+   letter-spacing: 0.04rem;
+   margin: 0 0.25rem;
+}
+
 /* WORK - PRODUCT DESIGN*/
 /*.workGallery is the class applied to main for PD and GD pages*/
 .workGallery{
