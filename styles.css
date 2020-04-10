@@ -1,0 +1,726 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,700&display=swap');
+
+*{box-sizing: border-box;}
+
+html{
+    margin:0;
+    height: 100%;
+}
+body{
+    height: 100%;
+    font-family: 'raleway';
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+/* HOME*/
+.homeBody/*body with background lines*/{
+    background-position:top;
+    background-color: #fff;
+    background-image: url(images/background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.standard-header, .small-header{
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    box-shadow:0 1px 5px rgba(64,64,64,0.30);
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    z-index:1;
+}
+.standard-header>a>img{
+    padding: 0.75rem 0 0.25rem 0;
+}
+.standard-header nav, .small-header nav{
+    display: flex;
+}
+.standard-header nav a, .small-header nav a{
+    flex:1;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #474747;
+    font-weight: 600;
+    font-size: smaller;
+    letter-spacing: 0.085em;
+    padding: 0.5rem 0;
+    transition: 0.3s;
+    position: relative;
+}
+.standard-header nav a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0.25rem;
+    left: 0;
+    background-color: #474747;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.standard-header nav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(0.8);
+    transform: scaleX(0.8);
+}
+.small-header nav a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0.25rem;
+    left: 0;
+    background-color: #474747;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.small-header nav a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(0.8);
+    transform: scaleX(0.8);
+}
+.small-header a img{
+    margin: 0.25rem;
+    display:none;
+  }
+/* header>nav>a:active{
+    background-color: #474747;
+    color:#fff;
+} */
+main{
+    margin: 0 auto;
+    flex: 1 0 auto;
+}
+#designSections{
+    width: 80%;
+    height: 30vh;
+    margin: 7vh auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    box-shadow:1px 1px 5px rgba(64,64,64,0.30); 
+}
+#designSections>a{
+    flex:1;
+    text-transform: uppercase;
+    color: #474747;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    font-size: 2.75rem;
+    font-weight: 200;
+    transition: 0.3s ease-in-out 0s;
+}
+#designSections>a:first-of-type:hover{
+    color: #90AEBB;
+}
+#designSections>a:last-of-type:hover{
+    color: #E46F6F;
+}
+#designSections>a>span{
+    font-size: 0.80rem;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+}
+#designSections>hr{
+    align-self: center;
+    height: 45%;
+    border: solid 0.5px #474747;
+}
+#recentWork{
+    width: 80%;
+    margin: 5vh auto;
+}
+#recentWork h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #474747;
+}
+#recentWork div{
+    display: flex;
+    justify-content: space-around;
+}
+#recentWork figure{
+    margin: 0;
+    padding:0.25rem;
+    width:100%;
+    position: relative;
+    filter: grayscale(80%);
+    transition: all 0.3s ease-in-out;
+}
+#recentWork figure figcaption{
+    height: auto;
+}
+#recentWork figure figcaption .projectTitle{
+text-decoration:none;
+color: #474747;
+font-size: 0.65rem;
+line-height: 0.85rem;
+display: block;
+} 
+#recentWork img{
+    width: 95%;
+    margin:0;
+}
+#recentWork figure:hover .colorOverlay{
+    position: absolute;
+    display: block;    
+}
+ #recentWork div figure:hover{
+    filter: grayscale(0%);
+}
+footer{
+    width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+    background-color: #474747;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+    padding:0 10%;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 5% 0;
+}
+footer .socialMedia{
+    display: flex;
+}
+footer .socialMedia a{
+    margin: 0 1rem 0 0;
+}
+footer .socialMedia img{
+    width:100%;
+    height: auto;
+}
+footer .contactLinks{
+    margin:0.5rem 0 0 0;
+}
+footer .contactLinks>a{
+    font-weight: 200;
+    color:#fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-left: #fff solid 1.5px;
+    padding: 0 1rem 0 0.5rem;
+    transition: all 2s ease-in-out;
+}
+footer .contactLinks a:hover{
+    text-decoration: underline;
+}
+footer .copyRight p{
+    text-transform: uppercase;
+    margin:0;
+    font-size: 0.65rem;
+    text-align: right;
+}
+/* WORK - PRODUCT DESIGN*/
+/*.workGallery is the class applied to main for PD and GD pages*/
+.workGallery{
+    margin: 7vh auto;
+    width: 80%;
+}
+/*.workGallery*/ .subheader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*.workGallery*/ .subheader>h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #474747;
+    margin:0;
+    letter-spacing: 0.05rem;
+}
+/*.workGallery*/ .backArrow{
+    text-align: right;
+    width:30%;
+    text-decoration: none;
+}
+/*.workGallery*/ .backArrow>span{
+    color: #474747;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
+/*.workGallery*/ .backArrow svg{
+    margin-right: 0.25rem;
+    transition: all 0.5s ease;
+}
+/*.workGallery*/ .backArrow:hover{
+    font-weight:600;
+}
+/*.workGallery*/ .backArrow:hover svg{
+    transform: translate(-5px,0);
+}
+.workGallery section{
+    width:100%;
+    margin:1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75rem;
+}
+.workGallery .boxPD /*the box with the category title*/{
+    background-color: #90AEBB;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.workGallery .boxPD>h2, .boxVD>h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin:0;   
+    align-self: flex-end;
+}
+#svg-filter { position:absolute; height:0 } /* used absolute positioning to make it work on firefox*/
+#svg-filter-hover { position:absolute; height:0 }
+.workGallery section figure{
+    width:100%;
+    margin:0;
+    position: relative;
+}
+.workGallery section figure a img{
+    width: 100%;
+    filter:url(product-desing.html#svg-color);
+    -webkit-filter: url(#svg-color);
+    /* transition: all 1s; *//*not working*/
+}
+.workGallery section figcaption /*name of the project*/{
+    display:none;
+  }
+.workGallery section figure:hover figcaption{
+    display:block;
+    position: absolute;
+    bottom:12%;
+    left:7%;
+    color: #fff;
+    font-size: 0.75rem;
+    width:100%;
+  }
+  .workGallery section figure:hover a img{
+    filter: url(#svg-color-hover);
+    -webkit-filter: url(#svg-color-hover);
+  }
+.workGallery>section .colorBoxPD/*class applied to empty color blocks*/{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144,174,187,0.30);
+}
+/*WORK - VISUAL DESIGN */
+
+.workGallery .boxVD /*the box with the category title*/{
+    background-color: #E46F6F;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.workGallery>section .colorBoxVD/*class applied to empty color blocks*/{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228,111,111,0.20);
+}
+/*WORK*/
+.workGallery-combined{
+    margin: 7vh auto;
+    width: 80%;
+}
+
+.workGallery-combined section{
+    width:100%;
+    margin:1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75rem;
+}
+.workGallery-combined .boxPD /*the box with the category title*/{
+    background-color: #90AEBB;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+.workGallery-combined .boxVD /*the box with the category title*/{
+    background-color: #E46F6F;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+.workGallery-combined .boxPD>h2, .boxVD>h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin:0;   
+    align-self: flex-end;
+}
+#svg-filter-PD { position:absolute; height:0 } /* used absolute positioning to make it work on firefox*/
+#svg-filter-hover-PD { position:absolute; height:0 }
+#svg-filter-VD { position:absolute; height:0 } /* used absolute positioning to make it work on firefox*/
+#svg-filter-hover-VD { position:absolute; height:0 }
+.workGallery-combined section figure{
+    width:100%;
+    margin:0;
+    position: relative;
+}
+.workGallery-combined section figure a{
+    width: 100%;
+    display:block ;
+}
+.workGallery-combined section figure a img{
+    width: 100%;
+    height: 100%;
+    /* filter:url(product-desing.html#svg-color);
+    -webkit-filter: url(#svg-color); */
+    /* transition: all 1s; *//*not working*/
+}
+.workGallery-combined section figcaption /*name of the project*/{
+    display:none;
+}
+.workGallery-combined section figure:hover figcaption{
+    display:block;
+    position: absolute;
+    bottom:12%;
+    left:7%;
+    color: #fff;
+    font-size: 0.75rem;
+    width:100%;
+}
+/*style for empty color boxes*/
+.workGallery-combined .colorBoxPD{
+    display: block;
+    background-color: rgba(144,174,187,0.30);
+    height: 100%;
+}
+/*color tint for images*/
+.workGallery-combined .image-VD a img{
+    filter:url(work.html#svg-color-VD);
+    -webkit-filter: url(#svg-color-VD);
+}
+.workGallery-combined .image-PD a img{
+    filter:url(work.html#svg-color-PD);
+    -webkit-filter: url(#svg-color-PD);
+}
+/*color tint for images on hover*/
+.workGallery-combined .image-VD:hover a img{
+    filter: url(#svg-color-hover-VD);
+    -webkit-filter: url(#svg-color-hover-VD);
+}
+.workGallery-combined .image-PD:hover a img{
+    filter: url(#svg-color-hover-PD);
+    -webkit-filter: url(#svg-color-hover-PD);
+}
+/*PROJECTS - PD (PRODUCT DESIGN)*/
+.workProject{
+    margin: 7vh auto;
+    width: 80%;
+}
+.workProject .h2-PD, .h2-VD{
+    font-weight: 200;
+    font-size: 2rem;
+}
+.workProject .h2-PD{
+    color:#90AEBB;
+}
+.workProject .h2-VD{
+    color: #E46F6F;
+}
+.workProject .singleImage{
+    width: 100%;
+    margin: 1rem auto;
+}
+.workProject .singleImage img{
+    width: 100%;
+}
+.workProject .intro-PD, .intro-VD{
+    color:#474747;
+    font-weight: 200;
+    line-height: 1.5rem;
+    padding-left: 0.45rem;
+}
+.workProject .intro-PD{
+    border-left: solid 2px #90AEBB;
+}
+.workProject .intro-VD{
+    border-left: solid 2px #E46F6F;
+}
+.workProject .h3-PD, .h3-VD{
+    font-weight: 400;
+}
+.workProject .h3-PD{
+    color:#90AEBB;
+}
+.workProject .h3-VD{
+    color:#E46F6F;
+}
+.workProject .plainText{
+    color: #474747;
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+.workProject .groupImage{
+    margin: 1.25rem auto;
+    width: 100%;
+}
+.workProject .groupImage>figure{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.workProject .groupImage>figure img{
+    width: 48%;
+}
+.workProject .groupImage figcaption, .workProject .singleImage figcaption{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #474747;
+    margin:0.5rem 0;
+}
+/*ABOUT*/
+/* #about is the id applied to section inside main in about page */
+#about{
+    background-color: #fff;
+    width: 80%;
+    margin: 7vh auto;
+    padding: 1rem;
+    box-shadow:1px 1px 5px rgba(64,64,64,0.30);
+    display: flex;
+    flex-direction: column;
+}
+#about img{
+    width:55%;
+    margin: 1rem auto;
+    
+}
+#about h2{
+    color: #474747;
+    font-weight: 400;
+    margin: 0.35rem auto;
+    text-align: left;
+    width: 100%;
+}
+#about p:nth-of-type(1){
+    color: #474747;
+    font-weight: 400;
+    width: 100%;
+    font-size: 0.95rem;
+    align-self: center;
+    line-height: 1.35rem;
+}
+#about p:nth-of-type(n+2){
+    color: #474747;
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 0.5rem auto;
+    line-height: 1.15rem;
+}
+#end-mark{
+    width:35%;
+    height: 7vh;
+    margin:0.5rem auto 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+#end-mark img{
+    width:45%;
+    margin:0 auto;
+}
+#end-mark::before {
+    visibility: visible;
+    content:"";
+    width:20%;
+    height: 1px;
+    background-color: #474747;
+    align-self: center;
+}
+#end-mark::after {
+    visibility: visible;
+    content:"";
+    width:20%;
+    height: 1px;
+    background-color: #474747;
+    align-self: center;
+}
+#arrow-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+#upArrow{
+    text-align: right;
+    width:30%;
+    text-decoration: none;
+    align-self: center;
+}
+#upArrow>span{
+    color: #474747;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+}
+#upArrow svg{
+    margin-right: 0.25rem;
+    transition: all 0.5s ease;
+}
+#upArrow:hover{
+    font-weight:600;
+}
+#upArrow:hover svg{
+    transform: translate(0,-5px);
+}
+#arrow-links .backArrow{
+    text-align: left;
+    align-self: center;
+}
+/*CONTACT*/
+#contact{
+    background-color: #fff;
+    width: 80%;
+    margin: 7vh auto;
+    padding: 1rem;
+    box-shadow:1px 1px 5px rgba(64,64,64,0.30);
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap:wrap; */
+}
+#contact form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem 0;
+    /* align-self:flex-start; */
+    color: #474747;
+}
+#contact>img{
+    float: right;
+    width: 24%;
+    margin: 0.75rem 0.75rem 0 0;
+    /* align-self: flex-end; */
+}
+#contact form label{
+    margin: 0.75rem 0;
+}
+#contact form input{
+    border:none;
+    border-bottom: 1px solid #474747;
+    height: 1.75rem;
+}
+#contact form textarea{
+    border:none;
+    border-bottom: 1px solid #474747;
+    font-family: 'raleway';
+    font-size: 0.75rem;
+    height: 3rem;
+}
+#contact form .submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+#contact form .submit input{
+    background-color: #fff;
+    color: #474747;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+#contact form .submit svg{
+    transition: all 0.5s ease;
+    /* margin-left: 0.25rem; */
+}
+#contact form .submit:hover svg{
+    transform: translate(5px,0);
+}
+#contact .socialMedia-links{
+margin: 0;
+}
+#contact .socialMedia-links>a{
+border-left: solid 2px #474747 ;
+padding-left: 0.45rem ;
+text-decoration: none;
+text-transform: uppercase;
+color: #474747;
+font-size: 0.85rem;
+}
+#contact .socialMedia-links>a:nth-last-of-type(1){
+margin-left: 1.5rem;
+}
+/* THANK YOU FOR CONTACTING ME*/
+#thankYou-contact{
+    background-color: #fff;
+    max-width: 95%;
+    height: 80%;
+    margin: 7vh auto;
+    padding: 1rem;
+    box-shadow:1px 1px 5px rgba(64,64,64,0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#thankYou-contact img{
+    width: 40%;
+    margin: 2rem 4rem 2rem 4rem;
+}
+#thankYou-contact p{
+    width: 90%;
+    color: #474747;
+    margin: 0.25rem 2rem;
+    font-size: 1rem;
+    line-height:1.2rem;
+    font-weight: 200;
+    text-align: center;
+}
+#thankYou-contact a{
+    margin: 2rem auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #474747;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+}
+#thankYou-contact svg{
+    transition: all 0.5s ease;
+}
+#thankYou-contact a:hover svg{
+    transform: translate(5px,0);
+}
+#thankYou-contact a:hover span{
+    font-weight: 600;
+}
