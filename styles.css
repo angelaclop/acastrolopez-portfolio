@@ -48,7 +48,7 @@ body{
     text-transform: uppercase;
     color: #474747;
     font-weight: 600;
-    font-size: smaller;
+    font-size: 0.8rem;
     letter-spacing: 0.085em;
     padding: 0.5rem 0;
     transition: 0.3s;
@@ -113,7 +113,7 @@ main{
     flex-direction: row;
     box-shadow:1px 1px 5px rgba(64,64,64,0.30); 
 }
-#designSections>a{
+#designSections a{
     flex:1;
     text-transform: uppercase;
     color: #474747;
@@ -126,13 +126,13 @@ main{
     font-weight: 200;
     transition: 0.3s ease-in-out 0s;
 }
-#designSections>a:first-of-type:hover{
+#designSections a:first-of-type:hover{
     color: #90AEBB;
 }
-#designSections>a:last-of-type:hover{
+#designSections a:last-of-type:hover{
     color: #E46F6F;
 }
-#designSections>a>span{
+#designSections a span{
     font-size: 0.80rem;
     letter-spacing: 0.04em;
     font-weight: 400;
@@ -243,7 +243,6 @@ footer a{
    letter-spacing: 0.04rem;
    margin: 0 0.25rem;
 }
-
 /* WORK - PRODUCT DESIGN*/
 /*.workGallery is the class applied to main for PD and GD pages*/
 .workGallery{
@@ -732,4 +731,72 @@ margin-left: 1.5rem;
 }
 #thankYou-contact a:hover span{
     font-weight: 600;
+}
+
+/*MEDIA QUERIES*/
+@media all and (min-width:970px){
+    /*HOME*/
+    .standard-header nav{
+    max-width: 60%;
+    margin: 0 auto;
+    }
+    .standard-header nav a, .small-header nav a{
+    font-size: 0.95rem; 
+    }
+    #designSections{
+    margin: 7vh auto 5vh;
+    width: 70%; 
+    height: 30vh;
+    }
+    #designSections a{
+    font-size: 4rem;    
+    }
+    #designSections a span{
+    font-size:0.9rem;
+    }
+    #recentWork{
+    width: 70%;
+    margin: 0 auto -5rem;
+    }
+    #recentWork figure img{
+    margin-bottom: 0.5rem;
+    }
+    #recentWork figure figcaption .projectTitle{
+    font-size: 0.9rem;
+    }
+    footer {
+    padding:1rem 15%;
+    }
+    footer a{
+    padding: 0.25rem 0.55rem   
+    }
+    footer a,p{
+    font-size: 0.9rem; 
+    }
+    footer .footer-links{
+    flex-direction: row;
+    padding: 0.5rem;
+    }
+    footer .socialMedia .soMe-icon{
+    display: none;
+    }
+    footer .socialMedia .soMe-link{
+    display: block;
+    padding: 0.25rem 0.35rem;
+    border-left: #fff solid 2px;
+    }
+    footer .socialMedia{
+    order: 1;
+    margin: 0 1rem 0 0;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    height: 100%;
+    }
+    .footer-links a:nth-of-type(1){
+    order: 0;
+    margin-right: 2rem;
+    }
+    .footer-links a:nth-of-type(2){
+    order: 2;
+    }
 }
