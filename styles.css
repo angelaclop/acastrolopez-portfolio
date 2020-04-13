@@ -8,7 +8,7 @@ html{
     height: 100%;
 }
 body{
-    height: 100%;
+    height: 100vh;
     font-family: 'raleway';
     margin:0 auto;
     display: flex;
@@ -36,9 +36,15 @@ body{
     top: 0;
     z-index:1;
 }
+.standard-header>a{
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
 .standard-header>a>img{
-    padding: 0.75rem 0 0.25rem 0;
-    width: 30%;
+    /* padding: 0.75rem 0 0.25rem 0; */
+    margin: 0.75rem 0 0rem 0;
+    width: 25%;
 }
 .standard-header nav, .small-header nav{
     display: flex;
@@ -106,7 +112,7 @@ main{
     flex: 1 0 auto;
 }
 #designSections{
-    width: 80%;
+    max-width: 80%;
     height: 30vh;
     margin: 7vh auto;
     background-color: #fff;
@@ -144,7 +150,7 @@ main{
     border: solid 0.5px #474747;
 }
 #recentWork{
-    width: 80%;
+    max-width: 80%;
     margin: 5vh auto;
 }
 #recentWork h1{
@@ -155,29 +161,32 @@ main{
 }
 #recentWork div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #recentWork figure{
     margin: 0;
-    padding:0.25rem;
-    width:100%;
+    max-width:90%;
     position: relative;
     filter: grayscale(80%);
     transition: all 0.3s ease-in-out;
 }
-#recentWork figure figcaption{
+#recentWork figure .projectTitle{
+    max-width:95%;
     height: auto;
-}
-#recentWork figure figcaption .projectTitle{
-text-decoration:none;
-color: #474747;
-font-size: 0.65rem;
-line-height: 0.85rem;
-display: block;
+    text-decoration:none;
+    color: #474747;
+    font-size: 0.65rem;
+    line-height: 0.85rem;
+    display: block;
+    margin: 0 auto;
 } 
-#recentWork img{
+#recentWork a {
+display: flex;
+align-content: center;
+}
+#recentWork a img{
     width: 95%;
-    margin:0;
+    margin:0 auto;
 }
 #recentWork figure:hover .colorOverlay{
     position: absolute;
@@ -735,11 +744,18 @@ margin-left: 1.5rem;
 }
 
 /*MEDIA QUERIES*/
+@media all and (min-width:700px){
+    /*HOME*/
+    .standard-header>a>img{
+    width: 15%;
+    margin: 0.75rem 0 0.5rem 0;
+    }
+}
 @media all and (min-width:970px){
     /*HOME*/
     .standard-header>a>img{
-        padding: 1.25rem 0 0.75rem 0;
-        width: 15%;
+    width: 12%;
+    margin: 0.75rem 0 0.75rem 0;
     }
     .standard-header nav{
     max-width: 60%;
@@ -804,4 +820,77 @@ margin-left: 1.5rem;
     .footer-links a:nth-of-type(2){
     order: 2;
     }
+}
+@media all and (min-width:1200px){
+    /*HOME*/
+    .standard-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .standard-header>a{
+        max-width: 8%;
+        margin-left: 5%;
+        flex: 1;
+    }
+    .standard-header>a>img{
+        width:100%;
+    }
+    .standard-header nav{
+        margin: 0 5% 0 0;
+        max-width: 35%;
+        align-self: center;
+        flex: 1;
+    }
+    .standard-header nav a{
+        max-width: 60%;
+        font-size:0.85rem ;
+    }
+    #designSections{
+        margin: 10vh auto 5vh;
+    }
+    #recentWork{
+        margin-bottom: 7vh;
+    }
+    #recentWork figure .projectTitle{
+        margin: 0.5rem auto;
+    }
+    footer a{
+        font-size: 0.85rem; 
+    }
+    .footer-links{
+        margin: 0 0;
+    }
+    .footer-links>a{
+        padding: 0.25rem 0.65rem;
+    }
+    footer .socialMedia .soMe-link{
+        padding: 0.25rem 0.65rem;
+        }
+}
+@media all and (min-width:1850px){
+    /*HOME*/
+    .standard-header>a{
+        max-width: 6%;
+    }
+    .standard-header nav{
+        max-width: 25%;
+    }
+    .standard-header nav a{
+        font-size:0.95rem ;
+    }
+    #designSections{
+        max-width: 60%;
+        margin-bottom: 10vh;
+    }
+    #recentWork{
+        max-width: 60%;
+        margin-bottom: 10vh;
+    }
+    footer{
+        padding:1rem 20%;
+    }
+    footer a{
+        font-size: 0.95rem; 
+        }
 }
