@@ -284,6 +284,7 @@ footer a{
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.04em;
+    vertical-align: middle;
 }
 /*.workGallery*/ .backArrow svg{
     margin-right: 0.25rem;
@@ -301,6 +302,10 @@ footer a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.75rem;
+    grid-template-areas:
+    "header1 item1PD"
+    "item2PD item3PD"
+    "item4PD item5PD";
 }
 .workGallery .boxPD /*the box with the category title*/{
     background-color: #90AEBB;
@@ -325,6 +330,7 @@ footer a{
     position: relative;
 }
 .workGallery section figure a img{
+    vertical-align: middle;
     width: 100%;
     filter:url(product-desing.html#svg-color);
     -webkit-filter: url(#svg-color);
@@ -346,10 +352,13 @@ footer a{
     filter: url(#svg-color-hover);
     -webkit-filter: url(#svg-color-hover);
   }
-.workGallery>section .colorBoxPD/*class applied to empty color blocks*/{
+.workGallery section .colorBoxPD/*class applied to empty color blocks*/{
     width: 100%;
     height: 100%;
     background-color: rgba(144,174,187,0.30);
+}
+.workGallery section .toogleVisible{
+    display: none;
 }
 /*WORK - VISUAL DESIGN */
 
@@ -794,7 +803,7 @@ margin-left: 1.5rem;
     }
     #recentWork{
     width: 70%;
-    margin: 0 auto -5rem;
+    margin: 0 auto 5rem;
     }
     #recentWork figure img{
     margin-bottom: 0.5rem;
@@ -879,6 +888,27 @@ margin-left: 1.5rem;
     font-size: 0.9rem;
     width:85%;   
     }
+    /* WORK - PRODUCT DESIGN*/
+    .workGallery{
+        width: 70%;
+        margin: 10vh auto 15vh;
+    }
+    .workGallery section{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        grid-template-areas:
+    "header1 item1PD ."
+    ". item3PD item2PD"
+    "item5PD . item4PD";
+    }
+    .workGallery .boxPD>h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    }
+    .workGallery section figure:hover figcaption{
+    font-size: 0.9rem;
+    width:85%;   
+    }
 }
 @media all and (min-width:1200px){
     /*HOME*/
@@ -934,7 +964,6 @@ margin-left: 1.5rem;
     /*WORK*/
     .workGallery-combined section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
         grid-template-areas:
         "header1 header3 item2VD header2"
         "item1PD item2PD item1VD item3VD"
@@ -949,6 +978,28 @@ margin-left: 1.5rem;
         font-size: 1.35rem;
         letter-spacing: 0.05em;
         }
+    /* WORK - PRODUCT DESIGN*/
+    .workGallery section .toogleVisible{
+        display: block;
+        width: 100%;
+        padding: 40.85%;
+        background-color: rgba(144,174,187,0.30);
+    }
+    .workGallery section{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    "header1 item1PD . item2PD"
+    ". item3PD item4PD ."
+    "item5PD . item6PD item7PD";
+        margin:2rem 0;
+        }
+    .workGallery .boxPD{
+        padding: 10%;
+    }
+    .workGallery .boxPD h2{
+        font-size: 1.35rem;
+        letter-spacing: 0.05em;
+    }
 }
 @media all and (min-width:1850px){
     /*HOME*/
@@ -999,6 +1050,18 @@ margin-left: 1.5rem;
     }
     .workGallery-combined .boxPD>h2, .boxVD>h2{ 
         padding-top: 50%;
+        font-size: 1.5rem;
+        letter-spacing: 0.07em;
+    }
+    .workGallery-combined section figure:hover figcaption{
+        font-size: 1.1rem; 
+        }
+    /* WORK - PRODUCT DESIGN*/
+    .workGallery{
+        max-width: 65%;
+        margin: 13vh auto 20vh;
+    }
+    .workGallery .boxPD>h2{ 
         font-size: 1.5rem;
         letter-spacing: 0.07em;
     }
