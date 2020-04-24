@@ -255,7 +255,7 @@ footer a{
 }
 /* WORK - PRODUCT DESIGN*/
 /*.workGallery is the class applied to main for PD and GD pages*/
-.workGallery{
+.workGallery, .workGallery-VD{
     margin: 7vh auto;
     width: 80%;
 }
@@ -311,9 +311,9 @@ footer a{
     background-color: #90AEBB;
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: 8%;
 }
-.workGallery .boxPD>h2, .boxVD>h2{
+.workGallery .boxPD>h2, .workGallery-VD .boxVD>h2{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.1rem;
@@ -324,7 +324,7 @@ footer a{
 }
 #svg-filter { position:absolute; height:0 } /* used absolute positioning to make it work on firefox*/
 #svg-filter-hover { position:absolute; height:0 }
-.workGallery section figure{
+.workGallery section figure, .workGallery-VD section figure{
     width:100%;
     margin:0;
     position: relative;
@@ -336,10 +336,10 @@ footer a{
     -webkit-filter: url(#svg-color);
     /* transition: all 1s; *//*not working*/
 }
-.workGallery section figcaption /*name of the project*/{
+.workGallery section figcaption, .workGallery-VD section figcaption /*name of the project*/{
     display:none;
   }
-.workGallery section figure:hover figcaption{
+.workGallery section figure:hover figcaption, .workGallery-VD section figure:hover figcaption{
     display:block;
     position: absolute;
     bottom:12%;
@@ -348,7 +348,7 @@ footer a{
     font-size: 0.75rem;
     width:100%;
   }
-  .workGallery section figure:hover a img{
+  .workGallery section figure:hover a img, .workGallery-VD section figure:hover a img{
     filter: url(#svg-color-hover);
     -webkit-filter: url(#svg-color-hover);
   }
@@ -361,14 +361,33 @@ footer a{
     display: none;
 }
 /*WORK - VISUAL DESIGN */
-
-.workGallery .boxVD /*the box with the category title*/{
+.workGallery-VD section{
+    width:100%;
+    margin:1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.75rem;
+    grid-template-areas:
+    "header2 item2VD"
+    "item1VD item3VD"
+    "item4VD item5VD";
+}
+.workGallery-VD .toogleVisible-VD{
+    display: none;
+}
+.workGallery-VD section figure a img{
+    vertical-align: middle;
+    width: 100%;
+    filter:url(product-desing.html#svg-color);
+    -webkit-filter: url(#svg-color);
+}
+.workGallery-VD .boxVD /*the box with the category title*/{
     background-color: #E46F6F;
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: 8%;
 }
-.workGallery>section .colorBoxVD, .workGallery-combined>section .colorBoxVD/*class applied to empty color blocks*/{
+.workGallery>section .colorBoxVD, .workGallery-combined>section .colorBoxVD, .workGallery-VD>section .colorBoxVD/*class applied to empty color blocks*/{
     width: 100%;
     height: 100%;
     background-color: rgba(228,111,111,0.20);
@@ -503,6 +522,7 @@ footer a{
 .workProject .intro-PD, .intro-VD{
     color:#474747;
     font-weight: 200;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     padding-left: 0.45rem;
 }
@@ -784,16 +804,16 @@ margin-left: 1.5rem;
     margin: 0.75rem 0 0.75rem 0;
     }
     .standard-header nav, .small-header nav{
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
     }
     .standard-header nav a, .small-header nav a{
     font-size: 0.95rem; 
     }
     #designSections{
-    margin: 7vh auto 5vh;
-    width: 70%; 
-    height: 30vh;
+    margin: 9vh auto 5vh;
+    max-width: 70%; 
+    height: 40vh;
     }
     #designSections a{
     font-size: 4rem;    
@@ -802,7 +822,7 @@ margin-left: 1.5rem;
     font-size:0.9rem;
     }
     #recentWork{
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto 5rem;
     }
     #recentWork figure img{
@@ -851,11 +871,14 @@ margin-left: 1.5rem;
     .subheader>h1{
     font-size: 1.25rem;   
     }
+    .backArrow{
+    width: 15%;
+    }
     .backArrow>span{
     font-size: 1rem; 
     }
     .workGallery-combined{
-    width: 70%;
+    max-width: 70%;
     margin-bottom: 7vh;
     }
     .workGallery-combined section{
@@ -888,12 +911,12 @@ margin-left: 1.5rem;
     font-size: 0.9rem;
     width:85%;   
     }
-    /* WORK - PRODUCT DESIGN*/
-    .workGallery{
+    /* WORK - PRODUCT DESIGN & VISUAL DESIGN*/
+    .workGallery, .workGallery-VD{
         width: 70%;
         margin: 10vh auto 15vh;
     }
-    .workGallery section{
+    .workGallery section {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
         grid-template-areas:
@@ -901,13 +924,55 @@ margin-left: 1.5rem;
     ". item3PD item2PD"
     "item5PD . item4PD";
     }
-    .workGallery .boxPD>h2{
+    .workGallery-VD section{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        grid-template-areas:
+    "header2 item2VD ."
+    ". item3VD item4VD"
+    "item5VD . item1VD";
+    }
+    .workGallery .boxPD>h2, .workGallery-VD .boxVD>h2{
     font-size: 1.5rem;
     letter-spacing: 0.05em;
     }
-    .workGallery section figure:hover figcaption{
+    .workGallery section figure:hover figcaption, .workGallery-VD section figure:hover figcaption{
     font-size: 0.9rem;
     width:85%;   
+    }
+    /*PROJECTS - PD (PRODUCT DESIGN)*/
+    .workProject{
+        margin: 25vh auto 18vh;
+        width: 70%;
+    }
+    .workProject .h2-PD, .h2-VD{
+        font-size: 2.5rem;
+    }
+    .workProject .intro-PD, .intro-VD{
+        padding-left: 0.65rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-bottom:2.5rem ;
+    }
+    .workProject .h3-PD, .h3-VD{
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    .workProject .plainText{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .workProject .groupImage figcaption, .workProject .singleImage figcaption{
+        font-size: 0.8rem;
+        margin:0.7rem 0;
+    }
+    .workProject #end-mark{
+        width: 30%;
+        margin:3rem auto;
+    }
+    .workProject #arrow-links{
+        width: 100%;
     }
 }
 @media all and (min-width:1200px){
@@ -941,14 +1006,19 @@ margin-left: 1.5rem;
         font-size:0.85rem ;
     }
     #designSections{
+        max-width: 50%;
         margin: 10vh auto 5vh;
     }
     #recentWork{
+        max-width: 50%;
         margin-bottom: 7vh;
     }
     #recentWork figure .projectTitle{
         margin: 0.5rem auto;
     }
+    footer {
+        padding:1rem 25%;
+        }
     footer a{
         font-size: 0.85rem; 
     }
@@ -962,6 +1032,9 @@ margin-left: 1.5rem;
         padding: 0.25rem 0.65rem;
         }
     /*WORK*/
+    .backArrow{
+        width: 10%;
+        }
     .workGallery-combined section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -978,7 +1051,7 @@ margin-left: 1.5rem;
         font-size: 1.35rem;
         letter-spacing: 0.05em;
         }
-    /* WORK - PRODUCT DESIGN*/
+    /* WORK - PRODUCT DESIGN & VISUAL DESIGN*/
     .workGallery section .toogleVisible{
         display: block;
         width: 100%;
@@ -992,11 +1065,28 @@ margin-left: 1.5rem;
     ". item3PD item4PD ."
     "item5PD . item6PD item7PD";
         margin:2rem 0;
-        }
+    }
+    .workGallery-VD section .toogleVisible-VD{
+        display: block;
+        width: 100%;
+        padding: 40.85%;
+        background-color: rgba(228,111,111,0.20);
+    }
+    .workGallery-VD section{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    "header2 item2VD . item1VD"
+    ". item3VD item4VD ."
+    "item6VD . item5VD item7VD";
+        margin:2rem 0;
+    }
     .workGallery .boxPD{
         padding: 10%;
     }
-    .workGallery .boxPD h2{
+    .workGallery-VD .boxVD{
+        padding: 10%;
+    }
+    .workGallery .boxPD h2, .workGallery-VD .boxVD h2{
         font-size: 1.35rem;
         letter-spacing: 0.05em;
     }
@@ -1022,6 +1112,7 @@ margin-left: 1.5rem;
     }
     #designSections{
         max-width: 60%;
+        height: 50vh;
         margin-bottom: 10vh;
     }
     #recentWork{
@@ -1056,16 +1147,19 @@ margin-left: 1.5rem;
     .workGallery-combined section figure:hover figcaption{
         font-size: 1.1rem; 
         }
-    /* WORK - PRODUCT DESIGN*/
-    .workGallery{
+    /* WORK - PRODUCT DESIGN & VISUAL DESIGN*/
+    .workGallery, .workGallery-VD{
         max-width: 65%;
         margin: 13vh auto 20vh;
     }
-    .workGallery .boxPD>h2{ 
+    .workGallery .boxPD>h2, .workGallery-VD .boxVD>h2{ 
         font-size: 1.5rem;
         letter-spacing: 0.07em;
     }
-    .workGallery-combined section figure:hover figcaption{
+    .workGallery section figure:hover figcaption{
         font-size: 1.1rem; 
-        }
+    }
+    .workGallery-VD section figure:hover figcaption{
+        font-size: 1.1rem; 
+    }
 }
