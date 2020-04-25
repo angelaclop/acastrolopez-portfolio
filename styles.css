@@ -499,11 +499,16 @@ footer a{
 }
 /*PROJECTS - PD (PRODUCT DESIGN)*/
 .workProject{
-    margin: 7vh auto;
+    margin: 5vh auto 7vh;
     width: 80%;
 }
+.workProject .introSection{
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
 .workProject .h2-PD, .h2-VD{
-    font-weight: 200;
+    font-weight: 400;
     font-size: 2rem;
 }
 .workProject .h2-PD{
@@ -512,11 +517,15 @@ footer a{
 .workProject .h2-VD{
     color: #E46F6F;
 }
+.workProject .introImage{
+    width: 100%;
+    margin: 0;
+}
 .workProject .singleImage{
     width: 100%;
     margin: 1rem auto;
 }
-.workProject .singleImage img{
+.workProject .singleImage img, .workProject .introImage img{
     width: 100%;
 }
 .workProject .intro-PD, .intro-VD{
@@ -533,7 +542,8 @@ footer a{
     border-left: solid 2px #E46F6F;
 }
 .workProject .h3-PD, .h3-VD{
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.15rem;
 }
 .workProject .h3-PD{
     color:#90AEBB;
@@ -649,7 +659,7 @@ footer a{
 #upArrow>span{
     color: #474747;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.04em;
 }
 #upArrow svg{
@@ -942,20 +952,32 @@ margin-left: 1.5rem;
     }
     /*PROJECTS - PD (PRODUCT DESIGN)*/
     .workProject{
-        margin: 25vh auto 18vh;
+        margin: 12vh auto 18vh;
         width: 70%;
     }
-    .workProject .h2-PD, .h2-VD{
-        font-size: 2.5rem;
+    .workProject .introSection{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .workProject .intro-PD, .intro-VD{
+    .workProject .h2-PD, .workProject .h2-VD{
+        font-size: 2.75rem;
+        max-width: 50%;
+        align-self: end;
+        margin: 1rem 0;
+    }
+    .workProject .introImage{
+        max-width: 50%;
+        margin: 3rem 0 0.5rem 0;
+    }
+    .workProject .intro-PD, .workProject .intro-VD{
         padding-left: 0.65rem;
-        font-size: 1.2rem;
-        line-height: 1.7rem;
-        margin-bottom:2.5rem ;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom:1rem ;
+        width: 100%;
     }
     .workProject .h3-PD, .h3-VD{
-        font-size: 1.5rem;
         margin-top: 2.5rem;
     }
     .workProject .plainText{
@@ -1089,6 +1111,31 @@ margin-left: 1.5rem;
     .workGallery .boxPD h2, .workGallery-VD .boxVD h2{
         font-size: 1.35rem;
         letter-spacing: 0.05em;
+    }
+    /*PROJECTS - PD (PRODUCT DESIGN)*/
+    .workProject .h2-PD, .workProject .h2-VD{
+        align-self: center;
+        margin-bottom: 7rem;
+    }
+    .workProject .intro-PD, .workProject .intro-VD{
+        width: 45%;
+        margin-top: -17%;
+    }
+    .workProject .h3-PD, .h3-VD{
+        font-size: 1.5rem;
+    }
+    .workProject .plainText{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+    .workProject .groupImage figcaption, .workProject .singleImage figcaption{
+        font-size: 0.9rem;
+        margin:1rem 0;
+    }
+    .workProject #end-mark{
+        width: 16%;
+        margin:3rem auto;
     }
 }
 @media all and (min-width:1850px){
