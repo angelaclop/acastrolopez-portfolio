@@ -667,7 +667,7 @@ footer a{
 #upArrow>span{
     color: #474747;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0.04em;
 }
 #upArrow svg{
