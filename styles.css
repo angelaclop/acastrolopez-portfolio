@@ -770,7 +770,7 @@ margin-left: 1.5rem;
 /* THANK YOU FOR CONTACTING ME*/
 #thankYou-contact{
     background-color: #fff;
-    max-width: 95%;
+    max-width: 80%;
     height: 80%;
     margin: 7vh auto;
     padding: 1rem;
@@ -780,17 +780,32 @@ margin-left: 1.5rem;
     align-items: center;
     justify-content: center;
 }
-#thankYou-contact img{
-    width: 40%;
+#thankYou-contact>svg{
+    width: 30%;
     margin: 2rem 4rem 2rem 4rem;
 }
+.envelope{
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+    animation: dash;
+    animation-timing-function:ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes dash{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
 #thankYou-contact p{
     width: 90%;
     color: #474747;
     margin: 0.25rem 2rem;
     font-size: 1rem;
     line-height:1.2rem;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
 }
 #thankYou-contact a{
@@ -1101,6 +1116,16 @@ margin-left: 1.5rem;
     #contact>div .socialMedia-links{
         display: none;
     }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact{
+        max-width: 80%;
+    }
+    #thankYou-contact>svg{
+        width: 20%;
+    }
+    #thankYou-contact a{
+        font-size: 1rem;
+    }
 }
 @media all and (min-width:1200px){
     /*HOME*/
@@ -1276,6 +1301,7 @@ margin-left: 1.5rem;
         max-width: 60%;
         margin: 10% auto 5%;
         padding: 1rem 2rem;
+        height: 55%;
     }
     #contact>div .biggerSizes h1{
         color: #474747;
@@ -1284,6 +1310,9 @@ margin-left: 1.5rem;
         font-weight: 600;
         letter-spacing: 0.05rem;
         margin:0;
+    }
+    #contact>div .biggerSizes img{
+        margin-right: 1rem;
     }
     #contact>div{
         max-width: 90%;
@@ -1300,6 +1329,10 @@ margin-left: 1.5rem;
     }
     #contact div form .submit{
         margin: 1rem 0 0 0;
+    }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact>svg{
+        width: 18%;
     }
 }
 @media all and (min-width:1850px){
@@ -1323,7 +1356,7 @@ margin-left: 1.5rem;
     }
     #designSections{
         max-width: 60%;
-        height: 50vh;
+        height: 40vh;
         margin-bottom: 10vh;
     }
     #recentWork{
@@ -1416,4 +1449,36 @@ margin-left: 1.5rem;
         font-size: 1.15rem;
         line-height: 2rem;
     } 
+    /*CONTACT*/
+    .mainContactPage .subheader{
+        padding: 0;
+    }
+    #contact{
+        max-width: 50%;
+        height: 57%;
+        margin: 7% auto 5%;
+    }
+    #contact div:nth-of-type(2){
+        position: relative;
+        top:20%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #contact div form .submit input{
+        font-size: 1.2rem;
+    }
+    #contact div form .submit{
+        margin: 2rem 0 0 0;
+    }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact{
+        max-width: 85%;
+    }
+    #thankYou-contact p{
+        font-size: 1.15rem;
+        margin: 0.5rem 2rem
+    }
+    #thankYou-contact a{
+        font-size: 1.2rem;
+    }
 }
