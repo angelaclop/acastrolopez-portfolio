@@ -8,7 +8,7 @@ html{
     height: 100%;
 }
 body{
-    height: 100vh;
+    height: 100%;
     font-family: 'raleway';
     margin:0 auto;
     display: flex;
@@ -16,7 +16,7 @@ body{
 }
 /* HOME*/
 .homeBody/*body with background lines*/{
-    background-position:top;
+    background-position:25% 10%;
     background-color: #fff;
     background-image: url(images/background-mobile.svg);
     background-repeat: no-repeat;
@@ -24,16 +24,13 @@ body{
 }
 .standard-header, .small-header{
     background-color: #fff;
+    box-shadow:0 1px 5px rgba(64,64,64,0.30);
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    position: sticky;
-    box-shadow:0 1px 5px rgba(64,64,64,0.30);
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index:1;
 }
 .standard-header>a{
@@ -110,11 +107,12 @@ body{
 main{
     margin: 0 auto;
     flex: 1 0 auto;
+    padding-top:10%;
 }
 #designSections{
     max-width: 80%;
-    height: 30vh;
-    margin: 7vh auto;
+    height: 15rem;
+    margin: 16vh auto 2rem;
     background-color: #fff;
     display: flex;
     flex-direction: row;
@@ -151,7 +149,7 @@ main{
 }
 #recentWork{
     max-width: 80%;
-    margin: 5vh auto;
+    margin: 0 auto 4rem;
 }
 #recentWork h1{
     text-transform: uppercase;
@@ -256,7 +254,7 @@ footer a{
 /* WORK - PRODUCT DESIGN*/
 /*.workGallery is the class applied to main for PD and GD pages*/
 .workGallery, .workGallery-VD{
-    margin: 7vh auto;
+    margin: 7rem auto 5rem;
     width: 80%;
 }
 /*.workGallery*/ .subheader{
@@ -394,7 +392,7 @@ footer a{
 }
 /*WORK*/
 .workGallery-combined{
-    margin: 7vh auto;
+    margin: 7rem auto 5rem;
     width: 80%;
 }
 .workGallery-combined section{
@@ -499,7 +497,7 @@ footer a{
 }
 /*PROJECTS - PD (PRODUCT DESIGN)*/
 .workProject{
-    margin: 5vh auto 7vh;
+    margin: 7rem auto 5rem;
     width: 80%;
 }
 .workProject .introSection{
@@ -579,24 +577,30 @@ footer a{
 }
 /*ABOUT*/
 /* #about is the id applied to section inside main in about page */
+.mainAbout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #about{
     background-color: #fff;
     max-width: 80%;
-    margin: 7vh auto;
     padding: 1.25rem;
     box-shadow:1px 1px 5px rgba(64,64,64,0.30);
     display: flex;
     flex-direction: column;
+    margin: 7rem auto 5rem;
 }
-#about .introAbout{
+#about>.introAbout{
     display: flex;
     flex-direction: column;
 }
-#about .introAbout div{
+#about>.introAbout div{
     display: flex;
     flex-direction: column;
 }
-#about .introAbout img{
+#about>.introAbout img{
     max-width:45%;
     margin: 1.5rem auto;
 }
@@ -685,17 +689,24 @@ footer a{
     align-self: center;
 }
 /*CONTACT*/
+.mainContactPage{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.biggerSizes{
+display: none;
+}
 #contact{
     background-color: #fff;
-    width: 80%;
-    margin: 7vh auto;
+    max-width: 75%;
+    margin: 7rem auto 5rem;
     padding: 1rem;
     box-shadow:1px 1px 5px rgba(64,64,64,0.30);
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap:wrap; */
 }
-#contact form{
+#contact div form{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -703,28 +714,28 @@ footer a{
     /* align-self:flex-start; */
     color: #474747;
 }
-#contact>img{
+#contact div>img{
     float: right;
     width: 24%;
     margin: 0.75rem 0.75rem 0 0;
     /* align-self: flex-end; */
 }
-#contact form label{
+#contact div form label{
     margin: 0.75rem 0;
 }
-#contact form input{
+#contact div form input{
     border:none;
     border-bottom: 1px solid #474747;
     height: 1.75rem;
 }
-#contact form textarea{
+#contact div form textarea{
     border:none;
     border-bottom: 1px solid #474747;
     font-family: 'raleway';
     font-size: 0.75rem;
     height: 3rem;
 }
-#contact form .submit{
+#contact div form .submit{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -732,7 +743,7 @@ footer a{
     margin: 1rem 0;
     cursor: pointer;
 }
-#contact form .submit input{
+#contact div form .submit input{
     background-color: #fff;
     color: #474747;
     text-transform: uppercase;
@@ -742,17 +753,17 @@ footer a{
     border: none;
     cursor: pointer;
 }
-#contact form .submit svg{
+#contact div form .submit svg{
     transition: all 0.5s ease;
     /* margin-left: 0.25rem; */
 }
-#contact form .submit:hover svg{
+#contact div form .submit:hover svg{
     transform: translate(5px,0);
 }
-#contact .socialMedia-links{
+#contact div .socialMedia-links{
 margin: 0;
 }
-#contact .socialMedia-links>a{
+#contact div .socialMedia-links>a{
 border-left: solid 2px #474747 ;
 padding-left: 0.45rem ;
 text-decoration: none;
@@ -760,15 +771,23 @@ text-transform: uppercase;
 color: #474747;
 font-size: 0.85rem;
 }
-#contact .socialMedia-links>a:nth-last-of-type(1){
+#contact div .socialMedia-links>a:nth-last-of-type(1){
 margin-left: 1.5rem;
 }
 /* THANK YOU FOR CONTACTING ME*/
+.SecContactPage{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
 #thankYou-contact{
     background-color: #fff;
-    max-width: 95%;
-    height: 80%;
-    margin: 7vh auto;
+    max-width: 80%;
+    height: 25rem;
+    margin: 7rem auto 5rem;
     padding: 1rem;
     box-shadow:1px 1px 5px rgba(64,64,64,0.30);
     display: flex;
@@ -776,17 +795,32 @@ margin-left: 1.5rem;
     align-items: center;
     justify-content: center;
 }
-#thankYou-contact img{
-    width: 40%;
+#thankYou-contact>svg{
+    width: 30%;
     margin: 2rem 4rem 2rem 4rem;
 }
+.envelope{
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+    animation: dash;
+    animation-timing-function:ease-in-out;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes dash{
+    to{
+      stroke-dashoffset:0;
+    }
+  }
 #thankYou-contact p{
     width: 90%;
     color: #474747;
     margin: 0.25rem 2rem;
     font-size: 1rem;
     line-height:1.2rem;
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
 }
 #thankYou-contact a{
@@ -806,17 +840,25 @@ margin-left: 1.5rem;
 #thankYou-contact a:hover span{
     font-weight: 600;
 }
-
 /*MEDIA QUERIES*/
+@media all and (min-width:470px){
+    /*HOME*/
+    .standard-header>a{
+    width: 20%;
+    }
+}
 @media all and (min-width:700px){
     /*HOME*/
     .standard-header>a{
-    width: 15%;
+    width: 14%;
     margin: 0.75rem 0 0.5rem 0;
     }
 }
 @media all and (min-width:970px){
     /*HOME*/
+    .homeBody/*body with background lines*/{
+        background-image: url(images/background.svg);
+    }
     .standard-header>a{
     width: 12%;
     margin: 0.75rem 0 0.75rem 0;
@@ -829,9 +871,9 @@ margin-left: 1.5rem;
     font-size: 0.95rem; 
     }
     #designSections{
-    margin: 9vh auto 5vh;
+    margin: 8rem auto 3rem;
     max-width: 70%; 
-    height: 40vh;
+    height: 35vh;
     }
     #designSections a{
     font-size: 4rem;    
@@ -841,7 +883,7 @@ margin-left: 1.5rem;
     }
     #recentWork{
     max-width: 70%;
-    margin: 0 auto 5rem;
+    margin: 0 auto 7rem;
     }
     #recentWork figure img{
     margin-bottom: 0.5rem;
@@ -897,7 +939,7 @@ margin-left: 1.5rem;
     }
     .workGallery-combined{
     max-width: 70%;
-    margin-bottom: 7vh;
+    margin:8rem auto 7rem;
     }
     .workGallery-combined section{
     grid-template-columns: 1fr 1fr 1fr;
@@ -932,7 +974,7 @@ margin-left: 1.5rem;
     /* WORK - PRODUCT DESIGN & VISUAL DESIGN*/
     .workGallery, .workGallery-VD{
         width: 70%;
-        margin: 10vh auto 15vh;
+        margin: 8rem auto 7rem;
     }
     .workGallery section {
         grid-template-columns: 1fr 1fr 1fr;
@@ -960,7 +1002,7 @@ margin-left: 1.5rem;
     }
     /*PROJECTS - PD (PRODUCT DESIGN)*/
     .workProject{
-        margin: 12vh auto 18vh;
+        margin: 8rem auto 7rem;
         width: 70%;
     }
     .workProject .introSection{
@@ -1007,10 +1049,10 @@ margin-left: 1.5rem;
     /*ABOUT*/
     #about{
         max-width:70%;
-        margin: 12vh auto;
+        margin: 8rem auto 7rem;
         padding: 2rem;
      }
-     #about .introAbout{
+     #about>.introAbout{
         flex-direction: row;
         margin: 2rem auto 1rem;
         width: 100%;
@@ -1019,9 +1061,8 @@ margin-left: 1.5rem;
         margin: 0;
         max-width:60%;
     }
-    #about .introAbout img{
-       max-width:25%;
-       height: 25%;
+    #about .introAbout>img{
+       max-width:24%;
        margin: 0 1.2rem 0 0;
     }
     #about .introAbout div h2{
@@ -1039,6 +1080,76 @@ margin-left: 1.5rem;
     }
     #about>#end-mark, #about>#arrow-links{
         display: none;
+    }
+    /*CONTACT*/
+    #contact{
+        width: 85%;
+        margin: 8rem auto 7rem;
+        padding: 1rem 2rem;
+        height:32rem ;
+    }
+    #contact>.subheader h1{
+        display: none;
+        position: relative;
+    }
+    #contact>.subheader{
+        justify-content: flex-end;
+    }
+    #contact>div {
+        align-self: center;
+        max-width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-top: 2rem;
+        margin: 1rem auto;
+    }
+    #contact>div .biggerSizes{
+        display: block flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: #000 solid 1px;
+        padding-right: 2rem;
+        height: 14rem;
+    }
+    #contact>div .biggerSizes h1{
+        color: #474747;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        margin:0;
+    }
+    #contact>div .biggerSizes img{
+        margin-right:0.5rem ;
+    }
+    #contact div>img{
+        width: 16%;
+        margin: 0 1rem 0 0;
+    }
+    #contact div form{
+        max-width: 50%;
+        margin: 0 0 1rem 0;
+        /* align-self:flex-start; */
+        color: #474747;
+    }
+    #contact div form label:nth-of-type(1){
+        margin:0 0 0.75rem 0;
+    }
+    #contact>div .socialMedia-links{
+        display: none;
+    }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact{
+        max-width: 60%;
+        margin: 8rem auto 7rem;
+    }
+    #thankYou-contact>svg{
+        width: 20%;
+    }
+    #thankYou-contact a{
+        font-size: 1rem;
     }
 }
 @media all and (min-width:1200px){
@@ -1073,11 +1184,12 @@ margin-left: 1.5rem;
     }
     #designSections{
         max-width: 50%;
-        margin: 10vh auto 5vh;
+        height: 20rem;
+        margin: 4rem auto 4rem;
     }
     #recentWork{
         max-width: 50%;
-        margin-bottom: 7vh;
+        margin-bottom: 7rem;
     }
     #recentWork figure .projectTitle{
         margin: 0.5rem auto;
@@ -1101,6 +1213,9 @@ margin-left: 1.5rem;
     .backArrow{
         width: 16%;
         }
+    .workGallery-combined{
+        margin:4rem auto 7rem;
+    }
     .workGallery-combined section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -1123,6 +1238,9 @@ margin-left: 1.5rem;
         width: 100%;
         padding: 40.85%;
         background-color: rgba(144,174,187,0.30);
+    }
+    .workGallery, .workGallery-VD{
+        margin: 4rem auto 7rem;
     }
     .workGallery section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1157,6 +1275,9 @@ margin-left: 1.5rem;
         letter-spacing: 0.05em;
     }
     /*PROJECTS - PD (PRODUCT DESIGN)*/
+    .workProject{
+        margin: 4rem auto 7rem;
+    }
     .workProject .h2-PD, .workProject .h2-VD{
         align-self: center;
         margin-bottom: 7rem;
@@ -1185,15 +1306,14 @@ margin-left: 1.5rem;
     /*ABOUT*/
     #about{
         max-width:66%;
-        margin: 14vh auto;
+        margin: 3rem auto 7rem;
         padding: 3rem;
      }
      #about .introAbout{
          margin: 2.5rem 0 0.5rem 0;
      }
-     #about .introAbout img{
-        max-width:27%;
-        height: 27%; 
+     #about .introAbout>img{
+        max-width:30%;
      }
      #about .introAbout div{
         justify-content: flex-end;
@@ -1210,6 +1330,49 @@ margin-left: 1.5rem;
         font-size: 1rem;
         line-height: 1.75rem;
     } 
+    /*CONTACT*/
+    #contact{
+        max-width: 60%;
+        margin: 3rem auto 9rem;
+        padding: 1rem 2rem;
+        height: 28rem;
+    }
+    #contact>div .biggerSizes h1{
+        color: #474747;
+        font-size: 1.45rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        margin:0;
+    }
+    #contact>div .biggerSizes img{
+        margin-right: 1rem;
+    }
+    #contact>div{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #contact div>img{
+        width: 12%;
+        margin: 0 1rem 0 0;
+    }
+    #contact div form label{
+        font-size: 1.15rem;
+    }
+    #contact div form .submit input{
+        font-size: 1rem;
+    }
+    #contact div form .submit{
+        margin: 1rem 0 0 0;
+    }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact{
+        margin: 4rem auto 7rem;
+        height: 35rem;
+    }
+    #thankYou-contact>svg{
+        width: 18%;
+    }
 }
 @media all and (min-width:1850px){
     /*HOME*/
@@ -1232,12 +1395,12 @@ margin-left: 1.5rem;
     }
     #designSections{
         max-width: 60%;
-        height: 50vh;
-        margin-bottom: 10vh;
+        height: 30rem;
+        margin:4rem auto 3rem;
     }
     #recentWork{
         max-width: 60%;
-        margin-bottom: 10vh;
+        margin-bottom: 7rem;
     }
     footer{
         padding:1rem 20%;
@@ -1254,7 +1417,6 @@ margin-left: 1.5rem;
     }
     .workGallery-combined{
         max-width: 65%;
-        margin: 13vh auto 20vh;
     }
     .workGallery-combined .boxPD, .workGallery-combined .boxVD{
         padding: 15%;
@@ -1270,7 +1432,7 @@ margin-left: 1.5rem;
     /* WORK - PRODUCT DESIGN & VISUAL DESIGN*/
     .workGallery, .workGallery-VD{
         max-width: 65%;
-        margin: 13vh auto 20vh;
+        margin: 4rem auto 7rem;
     }
     .workGallery .boxPD>h2, .workGallery-VD .boxVD>h2{ 
         font-size: 1.5rem;
@@ -1308,9 +1470,8 @@ margin-left: 1.5rem;
     #about .introAbout div{
         max-width: 70%;
      }
-    #about .introAbout img{
-        max-width:22%;
-        height: 22%;
+    #about .introAbout>img{
+        max-width:28%;
         margin: 0 1.65rem 0 0; 
      }
      #about .introAbout div h2{
@@ -1325,4 +1486,39 @@ margin-left: 1.5rem;
         font-size: 1.15rem;
         line-height: 2rem;
     } 
+    /*CONTACT*/
+    .mainContactPage .subheader{
+        padding: 0;
+    }
+    #contact{
+        max-width: 50%;
+        height: 35rem;
+    }
+    #contact div:nth-of-type(2){
+        position: relative;
+        top:20%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #contact div form .submit input{
+        font-size: 1.2rem;
+    }
+    #contact div form .submit{
+        margin: 2rem 0 0 0;
+    }
+    /* THANK YOU FOR CONTACTING ME*/
+    #thankYou-contact{
+        max-width: 65%;
+        margin: 2rem auto 9rem;
+    }
+    #thankYou-contact>svg{
+        width: 12%;
+    }
+    #thankYou-contact p{
+        font-size: 1.15rem;
+        margin: 0.5rem 2rem
+    }
+    #thankYou-contact a{
+        font-size: 1.2rem;
+    }
 }
