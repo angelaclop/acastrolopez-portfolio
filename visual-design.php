@@ -25,7 +25,7 @@ require('includes/header.php');
                 <figure style="grid-area: item3VD"><a href=""><img src="images/camera.jpg" alt=""></a><figcaption>This interesting project, 
                     please click to see it</figcaption></figure>
                 <div class= "colorBoxVD" style="grid-area: item1VD"></div>
-                <figure style="grid-area: item2VD"><a href=""><img src="images/phone.jpg" alt=""></a><figcaption>This interesting project, 
+                <figure style="grid-area: item2VD"><a href="project-vd1.php"><img src="images/thumbs/outlet-bag-thumb.jpg" alt="SAIT Hospitality Bag Design"></a><figcaption>This interesting project, 
                     please click to see it</figcaption></figure>
                 <figure style="grid-area: item4VD"><a href=""><img src="images/umbrella.jpg" alt=""></a><figcaption>This interesting project, 
                     please click to see it</figcaption></figure>
