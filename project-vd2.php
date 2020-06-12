@@ -38,24 +38,24 @@ require('includes/header.php');
                 <figure>
                 <img src="images/3dJewels-sketches.jpg" alt="3d Jewels Logo Sketches">
                 <!-- <img src="images/umbrella.jpg" alt=""> -->
-                </figure><figcaption><em>Sketch iterations of the logo.</em></figcaption></figure>
+                </figure><figcaption><em>Sketch iterations of the logo</em></figcaption></figure>
                 <h3 class="h3-VD">The Outcome</h3>
                 <p class="plainText">After the symbol of the logo was ready, the next phase was to work with the brand name to reinforce the concept around 3d Jewels. A mix between serif and sans serif fonts worked well to represent the cleanness of technology and the elegance of jewelry. Ultimately, the color scheme featuring white, teal, and dark gray creates unity between the logo elements and its different variations. Once the visual components of the logo were defined, the brand starts to take form through these elements applied to the package, business cards, and the website.</p>
                 <figure class="singleImage">
                 <img src="images/3dJewels-logo.jpg" alt="3d Jewels Logo">
-                <figcaption> <em>Primary and secondary logo.</em></figcaption>
+                <figcaption> <em>Primary and secondary logo</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/3dJewels-business card.jpg" alt="3d Jewels Business Card Design">
-                <figcaption> <em>3d Jewels Business card.</em></figcaption>
+                <figcaption> <em>3d Jewels Business card</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/3dJewels-package.jpg" alt="3d Jewels Bag Design">
-                <figcaption> <em>Package branding.</em></figcaption>
+                <figcaption> <em>Package branding</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/3dJewels-website.jpg" alt="3d Jewels Website Design">
-                <figcaption> <em>Website landing page.</em></figcaption>
+                <figcaption> <em>Website landing page</em></figcaption>
                 </figure>
             </section>
             <div id="end-mark"><img src="images/icons/ac-icon.svg" alt="Angela Castro symbol" ></div>

@@ -35,28 +35,28 @@ require('includes/header.php');
                 <figure>
                 <img src="images/bag-1.jpg" alt="The Highwood Bag Design">
                 <!-- <img src="images/umbrella.jpg" alt=""> -->
-                </figure><figcaption><em>Bag design for The Highwood, a gourmet restaurant of the School of Hospitality and Tourism at SAIT.</em></figcaption></figure>
+                </figure><figcaption><em>Bag design for The Highwood, a gourmet restaurant of the School of Hospitality and Tourism at SAIT</em></figcaption></figure>
                 <h3 class="h3-VD">The Outcome</h3>
                 <p class="plainText">The artwork created for each bag has a line drawing that presents the essence of the venue, along with the venue logos in line, common to all designs. Therefore, there is one bag design for every location without limiting interchange when the stock is low in any of them.</p>
                 <figure class="singleImage">
                 <img src="images/bag-2.jpg" alt="The Tastemarket Bag Design">
-                <figcaption> <em>Design for The Tastemarket an urban eatery in Downtown Calgary.</em></figcaption>
+                <figcaption> <em>Design for The Tastemarket an urban eatery in Downtown Calgary</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/bag-3.jpg" alt="4 Nines Bag Design">
-                <figcaption> <em>Design for 4 Nines, the campus bistro.</em></figcaption>
+                <figcaption> <em>Design for 4 Nines, the campus bistro</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/bag-4.jpg" alt="The Butchery Bag Design">
-                <figcaption> <em>Bag design for The Butchery, a meat retail market on campus.</em></figcaption>
+                <figcaption> <em>Bag design for The Butchery, a meat retail market on campus</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/bag-5.jpg" alt="The Marketplace Bag Design">
-                <figcaption> <em>Design for The Marketplace, the retail outlet for student-made goods.</em></figcaption>
+                <figcaption> <em>Design for The Marketplace, the retail outlet for student-made goods</em></figcaption>
                 </figure>
                 <figure class="singleImage">
                 <img src="images/bag-6.jpg" alt="Destinations Bag Design">
-                <figcaption> <em>Bag design for Destinations, a travel agency run by students of the School of Hospitality and Tourism.</em></figcaption>
+                <figcaption> <em>Bag design for Destinations, a travel agency run by students of the School of Hospitality and Tourism</em></figcaption>
                 </figure>
             </section>
             <div id="end-mark"><img src="images/icons/ac-icon.svg" alt="Angela Castro symbol" ></div>
