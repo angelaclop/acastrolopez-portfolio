@@ -3,13 +3,10 @@ $title = "Angela Castro - Visual Design";
 require('includes/header.php');
  ?>
 	<body>
-        <header class="standard-header">
-            <a href="index.php" id='logo'><img src="images/ac-logo.svg" alt="Angela Castro Logo"></a>
-            <nav><a href="index.php">home</a>
-            <a href="work.php">work</a>
-            <a href="contact.php">contact</a>
-            <a href="about.php">about</a></nav>
-        </header>
+  <?php
+$title = "Angela Castro - Portfolio"; 
+require('includes/nav.php');
+ ?>
         <main class='workGallery-VD'>
             <div class="subheader">
                 <h1 class='sectionTitle'>Work</h1>
@@ -22,34 +19,32 @@ require('includes/header.php');
             </div>
             <section>
                 <div class="boxVD" style="grid-area: header2"><h2>visual <br>design</h2></div>
-                <figure style="grid-area: item3VD"><a href="project-vd2.php"><img src="images/thumbs/3DJewels-thumb.jpg" alt="3D Jewels Branding"></a><figcaption>This interesting project, 
-                    please click to see it</figcaption></figure>
+                <figure style="grid-area: item3VD"><a href="project-vd2.php"><img src="images/thumbs/3DJewels-thumb.jpg" alt="3D Jewels Branding"></a><figcaption>3D Jewels Brand Identity</figcaption></figure>
                 <div class= "colorBoxVD" style="grid-area: item1VD"></div>
-                <figure style="grid-area: item2VD"><a href="project-vd1.php"><img src="images/thumbs/outlet-bag-thumb.jpg" alt="SAIT Hospitality Bag Design"></a><figcaption>This interesting project, 
-                    please click to see it</figcaption></figure>
-                <figure style="grid-area: item4VD"><a href=""><img src="images/umbrella.jpg" alt=""></a><figcaption>This interesting project, 
-                    please click to see it</figcaption></figure>
-                <figure style="grid-area: item5VD"><a href=""><img src="images/converse.jpg" alt=""></a><figcaption>This interesting project, 
-                    please click to see it</figcaption></figure>
+                <figure style="grid-area: item2VD"><a href="project-vd1.php"><img src="images/thumbs/outlet-bag-thumb.jpg" alt="SAIT Hospitality Bag Design"></a><figcaption>Bag Branding SAIT Hospitality Outlets</figcaption></figure>
+                <figure style="grid-area: item4VD"><a href="project-vd3.php"><img src="images/thumbs/odyssey-thumb.jpg" alt="Odyssey Branding"></a><figcaption>Odyssey
+                Brand Identity</figcaption></figure>
+                <figure style="grid-area: item5VD"><a href="project-vd4.php"><img src="images/thumbs/cru-thumb.jpg" alt="CRU E-learning"></a><figcaption>CRU E-learning Visual Design
+                </figcaption></figure>
                 <div class="toogleVisible-VD" style="grid-area: item6VD"></div>
                 <div class="toogleVisible-VD" style="grid-area: item7VD"></div>
                 <!-- filter applied to images -->
                 <svg id="svg-filter">
                     <filter id="svg-color">
                       <feColorMatrix in="SourceGraphic" type="matrix" 
-                      values="0.89 0 0 0 0
-                            0 0.43 0 0 0
-                            0 0 0.43 0 0
-                            0 0 0 0.7 0"/>
+                      values="0.95 0 0 0 0
+                            0 0.53 0 0 0
+                            0 0 0.54 0 0
+                            0 0 0 1 0"/>
                      </filter>
                 </svg>
                 <!-- filter applied to images on hover -->
                 <svg id="svg-filter-hover">
                     <filter id="svg-color-hover">
-                      <feColorMatrix type="matrix" values="0.89 0 0 -0.2 0
-                            0 0.43 0 -0.2 0
-                            0 0 0.43 -0.2 0
-                            0 0 0 0.9 0"/>
+                      <feColorMatrix type="matrix" values="0.89 0 0 -0.25 0
+                            0 0.43 0 -0.25 0
+                            0 0 0.43 -0.25 0
+                            0 0 0 1 0"/>
                      </filter>
               </svg>
             </section>
