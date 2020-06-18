@@ -4,13 +4,10 @@ require('includes/header.php');
  ?>
 	<body class='homeBody'>
         <a href="" id="anchor-header"></a>
-        <header class="standard-header">
-          <a href="index.php" id='logo'><img src="images/ac-logo.svg" alt="Angela Castro Logo"></a>
-          <nav><a href="index.php">home</a>
-          <a href="work.php">work</a>
-          <a href="contact.php">contact</a>
-          <a href="about.php">about</a></nav>
-        </header>
+        <?php
+$title = "Angela Castro - Portfolio"; 
+require('includes/nav.php');
+ ?>
         <main class="SecContactPage">
             <div id="thankYou-contact">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 34.775">

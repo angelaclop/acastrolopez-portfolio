@@ -4,16 +4,13 @@ require('includes/header.php');
  ?>
 	<body>
         <a href="" id="anchor-header"></a>
-        <header class="standard-header">
-            <a href="index.php" id='logo'><img src="images/ac-logo.svg" alt="Angela Castro Logo"></a>
-            <nav><a href="index.php">home</a>
-            <a href="work.php">work</a>
-            <a href="contact.php">contact</a>
-            <a href="about.php">about</a></nav>
-        </header>
+        <?php
+$title = "Angela Castro - Portfolio"; 
+require('includes/nav.php');
+ ?>
         <main class="workProject">
             <div class="subheader">
-                <h1 class='sectionTitle'>Work / Visual Design /</h1>
+            <h1 class='sectionTitle'> <a href="work.php">Work</a>  / <a href="visual-design.php">Visual Design</a></h1>
                 <a href="javascript:history.back()" class="backArrow"><svg xmlns="http://www.w3.org/2000/svg" width="17.27" height="13" viewBox="0 0 23.3 19.19">
                     <g id="Group_6" data-name="Group 6" transform="translate(-1568.55 -285.166)">
                       <path id="Path_17" class="arrow" data-name="Path 17" d="M7670.6,298.8h-20.8l7.8-7.867" transform="translate(-6080 -4)" fill="none" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
@@ -27,7 +24,7 @@ require('includes/header.php');
                 <figure class="introImage">
                 <img src="images/odyssey-cup.jpg" alt="Odyssey Cups"></figure>
                 <p class="intro-VD">The Odyssey coffeehouse rejoices in a cozy atmosphere and a unique coffee concept. I embarked on the adventure of creating a new branding concept for this coffee shop.</p></div>
-                <p>Personal Project    .    #graphic design #branding    .    April 2019</p>
+                <p class="projectData">Personal Project&nbsp; &nbsp; &nbsp;| <span>#graphic design</span> <span>#branding</span><span style= "background-color: #ffffff;">|</span> &nbsp; &nbsp; &nbsp;April 2019</p>
                 <h3 class="h3-VD">The Brief</h3>
                 <p class="plainText">While studying, I worked as a Barista for The Odyssey. During this time, I got to love coffee even more, if that’s possible for someone born in Colombia. I was fascinated by the skills and empathy that intervene in the preparation of a good cup of coffee. Empathy is what customers value when they get their perfect skim-decaf-latte in the morning and it was empathy that drove my interest in working with the brand of this coffee house.</p>
                 <p class="plainText">The Odyssey is located on SAIT's main campus in Calgary, is in the heart of students, faculty, and anyone that has visited, it offers ethically sourced coffee of the best quality and their expertise for coffee is renowned. On their first decade anniversary, the brand called for a refresh, although they had an agency to work on that, I wanted to land my inspiration and insight into an alternative design proposal.</p>

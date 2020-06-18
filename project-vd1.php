@@ -4,16 +4,13 @@ require('includes/header.php');
  ?>
 	<body>
         <a href="" id="anchor-header"></a>
-        <header class="standard-header">
-            <a href="index.php" id='logo'><img src="images/ac-logo.svg" alt="Angela Castro Logo"></a>
-            <nav><a href="index.php">home</a>
-            <a href="work.php">work</a>
-            <a href="contact.php">contact</a>
-            <a href="about.php">about</a></nav>
-        </header>
+        <?php
+$title = "Angela Castro - Portfolio"; 
+require('includes/nav.php');
+ ?>
         <main class="workProject">
             <div class="subheader">
-                <h1 class='sectionTitle'>Work / Visual Design /</h1>
+                <h1 class='sectionTitle'> <a href="work.php">Work</a>  / <a href="visual-design.php">Visual Design</a></h1>
                 <a href="javascript:history.back()" class="backArrow"><svg xmlns="http://www.w3.org/2000/svg" width="17.27" height="13" viewBox="0 0 23.3 19.19">
                     <g id="Group_6" data-name="Group 6" transform="translate(-1568.55 -285.166)">
                       <path id="Path_17" class="arrow" data-name="Path 17" d="M7670.6,298.8h-20.8l7.8-7.867" transform="translate(-6080 -4)" fill="none" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
@@ -23,19 +20,18 @@ require('includes/header.php');
             </div>
             <section>
                 <div class="introSection">
-                <h2 class="h2-VD">Bag Branding –<br>School of <br>Hospitality and <br>Tourism Venues</h2>
+                <h2 class="h2-VD">Bag Branding<br>School of Hospitality</h2>
                 <figure class="introImage">
                 <img src="images/hero-outlet.jpg" alt="SAIT Hospitality Outlet Bags"></figure>
                 <p class="intro-VD">SAIT School of Hospitality and Tourism provides hands-on experience for students in different venues. Through hand-drawn lines that depict the essence of each outlet, this branding visually represents the spirit of the School.</p></div>
-                <p>** Project developed for SAIT
-                through Xerox Creative Studio.		.	#graphic design #branding	.	Nov. 2019</p>
+                <p class="projectData">** Project developed for SAIT
+                through Xerox Creative Studio&nbsp; &nbsp; &nbsp;|<span>#graphic design</span> <span>#branding</span><span style= "background-color: #ffffff;">|</span>&nbsp; &nbsp; &nbsp;Nov. 2019</p>
                 <h3 class="h3-VD">The Brief</h3>
                 <p class="plainText">Located in Calgary, SAIT’s School of Hospitality and Tourism has always been a reference of first-class education as well as high-quality food in each of its six venues throughout the city. Every location is different, each of them provide distinct atmospheres to customers and students. For that reason, the school sought after a consistent branding for all of them without losing their uniqueness.</p>
                 <figure class="singleImage">
-                <figure>
                 <img src="images/bag-1.jpg" alt="The Highwood Bag Design">
                 <!-- <img src="images/umbrella.jpg" alt=""> -->
-                </figure><figcaption><em>Bag design for The Highwood, a gourmet restaurant of the School of Hospitality and Tourism at SAIT</em></figcaption></figure>
+                <figcaption><em>Bag design for The Highwood, a gourmet restaurant of the School of Hospitality and Tourism at SAIT</em></figcaption></figure>
                 <h3 class="h3-VD">The Outcome</h3>
                 <p class="plainText">The artwork created for each bag has a line drawing that presents the essence of the venue, along with the venue logos in line, common to all designs. Therefore, there is one bag design for every location without limiting interchange when the stock is low in any of them.</p>
                 <figure class="singleImage">

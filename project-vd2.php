@@ -4,16 +4,13 @@ require('includes/header.php');
  ?>
 	<body>
         <a href="" id="anchor-header"></a>
-        <header class="standard-header">
-            <a href="index.php" id='logo'><img src="images/ac-logo.svg" alt="Angela Castro Logo"></a>
-            <nav><a href="index.php">home</a>
-            <a href="work.php">work</a>
-            <a href="contact.php">contact</a>
-            <a href="about.php">about</a></nav>
-        </header>
+        <?php
+$title = "Angela Castro - Portfolio"; 
+require('includes/nav.php');
+ ?>
         <main class="workProject">
             <div class="subheader">
-                <h1 class='sectionTitle'>Work / Visual Design /</h1>
+            <h1 class='sectionTitle'> <a href="work.php">Work</a>  / <a href="visual-design.php">Visual Design</a></h1>
                 <a href="javascript:history.back()" class="backArrow"><svg xmlns="http://www.w3.org/2000/svg" width="17.27" height="13" viewBox="0 0 23.3 19.19">
                     <g id="Group_6" data-name="Group 6" transform="translate(-1568.55 -285.166)">
                       <path id="Path_17" class="arrow" data-name="Path 17" d="M7670.6,298.8h-20.8l7.8-7.867" transform="translate(-6080 -4)" fill="none" stroke="#474747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
@@ -27,7 +24,7 @@ require('includes/header.php');
                 <figure class="introImage">
                 <img src="images/hero-3dJewels.jpg" alt="3d Jewels Package Branding"></figure>
                 <p class="intro-VD">3D Jewels is a concept for a custom made jewelry ecommerce, where luxury and technology come together.</p></div>
-                <p>Personal Project	.	#graphic design #branding	.	Oct. 2017, revisited Oct. 2018</p>
+                <p class="projectData">Personal Project&nbsp; &nbsp; &nbsp;|<span>#graphic design</span><span>#branding</span><span style= "background-color: #ffffff;">|</span>&nbsp; &nbsp; &nbsp;Oct. 2017, revisited Oct. 2018</p>
                 <h3 class="h3-VD">The Brief</h3>
                 <p class="plainText">
                 Jewelry it’s been one of my hobbies for some time now, I feel attracted to the aesthetics of accessorizing, the materials, and the production process. 
@@ -35,10 +32,9 @@ require('includes/header.php');
                 <h3 class="h3-VD">The Process</h3>
                 <p class="plainText">The initial approach was to select the representative elements of the brand, jewelry, and 3d printing process, and start creating shapes to represent them. From the first sketches, circular shapes representing the front view of a ring with a stone setting started to show something interesting. That idea iterated, incorporating the print head of the 3D printer then transforming the ring into part of the machine surrounding the diamond. Cutting the upper corner of the stone helps to represent better how 3D printing builds objects by successively adding thin layers of material. The following iterations cleaned the shape by working around positive and negative space until creating the symbol of the logo.</p>
                 <figure class="singleImage">
-                <figure>
                 <img src="images/3dJewels-sketches.jpg" alt="3d Jewels Logo Sketches">
                 <!-- <img src="images/umbrella.jpg" alt=""> -->
-                </figure><figcaption><em>Sketch iterations of the logo</em></figcaption></figure>
+                <figcaption><em>Sketch iterations of the logo</em></figcaption></figure>
                 <h3 class="h3-VD">The Outcome</h3>
                 <p class="plainText">After the symbol of the logo was ready, the next phase was to work with the brand name to reinforce the concept around 3D Jewels. A mix between serif and sans serif fonts worked well to represent the cleanness of technology and the elegance of jewelry. Ultimately, the color scheme featuring white, teal, and dark gray creates unity between the logo elements and its different variations. Once the visual components of the logo were defined, the brand starts to take form through these elements applied to the package, business cards, and the website.</p>
                 <figure class="singleImage">
