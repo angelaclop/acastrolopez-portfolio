@@ -156,6 +156,7 @@ main{
     font-weight: 600;
     font-size: 1rem;
     color: #474747;
+    margin:0 0 1.5rem 0;
 }
 #recentWork div{
     display: flex;
@@ -165,18 +166,16 @@ main{
     margin: 0;
     max-width:90%;
     position: relative;
-    filter: grayscale(80%);
-    transition: all 0.3s ease-in-out;
 }
 #recentWork figure .projectTitle{
     max-width:95%;
     height: auto;
     text-decoration:none;
     color: #474747;
-    font-size: 0.65rem;
-    line-height: 0.85rem;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto;
 } 
 #recentWork a {
 display: flex;
@@ -185,13 +184,18 @@ align-content: center;
 #recentWork a img{
     width: 95%;
     margin:0 auto;
+    box-shadow:0.5px 0.5px 8px rgba(64,64,64,0.10);
+    filter:grayscale(60%);
+    -webkit-filter: grayscale(60%);
+  -moz-filter: grayscale(60%);
+  -ms-filter: grayscale(60%);
+  transition: all 0.3s ease-in-out;
 }
-#recentWork figure:hover .colorOverlay{
-    position: absolute;
-    display: block;    
-}
- #recentWork div figure:hover{
-    filter: grayscale(0%);
+ #recentWork figure:hover img{
+    filter:grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
 }
 footer{
     width: 100%;
@@ -206,16 +210,23 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #fff;
+    color: #999;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.04rem;
+    transition: 0.3s ease;
+    font-weight: 400;
 }
 .footer-links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem 0;
+}
+.footer-links a:hover{
+    color:#FFF;
+    /* font-weight: 600; */
+    /* text-decoration: underline; */
 }
 .footer-links a:nth-of-type(1){
     order: 1;
@@ -337,9 +348,9 @@ footer a{
 .workGallery section figure a img{
     vertical-align: middle;
     width: 100%;
-    filter:url(product-desing.html#svg-color);
+    filter:url(product-desing.php#svg-color);
     -webkit-filter: url(#svg-color);
-    /* transition: all 1s; *//*not working*/
+    transition: all 0.3s ease;
 }
 .workGallery section figcaption, .workGallery-VD section figcaption /*name of the project*/{
     display:none;
@@ -912,8 +923,10 @@ margin-left: 1.5rem;
     }
     #recentWork figure figcaption .projectTitle{
     font-size: 0.9rem;
-    border-left: 2px solid #474747;
+    /* border-left: 2px solid #474747; */
     padding-left: 0.35rem;
+    margin: 0.75rem 0;
+    line-height: 1.2rem;
     }
     footer {
     padding:1rem 15%;

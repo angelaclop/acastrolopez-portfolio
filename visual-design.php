@@ -19,13 +19,11 @@ require('includes/nav.php');
             </div>
             <section>
                 <div class="boxVD" style="grid-area: header2"><h2>visual <br>design</h2></div>
-                <figure style="grid-area: item3VD"><a href="project-vd2.php"><img src="images/thumbs/3DJewels-thumb.jpg" alt="3D Jewels Branding"></a><figcaption>3D Jewels Brand Identity</figcaption></figure>
+                <figure style="grid-area: item3VD"><a href="project-vd3.php"><img src="images/thumbs/odyssey-thumb.jpg" alt="Odyssey Branding"></a><figcaption>Odyssey Brand Identity</figcaption></figure>
                 <div class= "colorBoxVD" style="grid-area: item1VD"></div>
                 <figure style="grid-area: item2VD"><a href="project-vd1.php"><img src="images/thumbs/outlet-bag-thumb.jpg" alt="SAIT Hospitality Bag Design"></a><figcaption>Bag Branding SAIT Hospitality Outlets</figcaption></figure>
-                <figure style="grid-area: item4VD"><a href="project-vd3.php"><img src="images/thumbs/odyssey-thumb.jpg" alt="Odyssey Branding"></a><figcaption>Odyssey
-                Brand Identity</figcaption></figure>
-                <figure style="grid-area: item5VD"><a href="project-vd4.php"><img src="images/thumbs/cru-thumb.jpg" alt="CRU E-learning"></a><figcaption>CRU E-learning Visual Design
-                </figcaption></figure>
+                <figure style="grid-area: item4VD"><a href="project-vd4.php"><img src="images/thumbs/cru-thumb.jpg" alt="CRU E-learning"></a><figcaption>CRU E-learning Visual Design</figcaption></figure>
+                <figure style="grid-area: item5VD"><a href="project-vd2.php"><img src="images/thumbs/3DJewels-thumb.jpg" alt="3D Jewels Branding"></a><figcaption>3D Jewels Brand Identity</figcaption></figure>
                 <div class="toogleVisible-VD" style="grid-area: item6VD"></div>
                 <div class="toogleVisible-VD" style="grid-area: item7VD"></div>
                 <!-- filter applied to images -->
