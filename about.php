@@ -18,7 +18,7 @@ require('includes/nav.php');
                     </g>
                   </svg> <span>back</span></a></div>
                   <div class="introAbout">
-                <img src="images/angela-castro-sq.jpg" alt="Angela Castro">
+                <img src="images/castroA.jpg" alt="Angela Castro">
                 <div><h2>Hola!</h2>
                 <p>I'm a passionate designer, a fan of the small details that make difference. Curiosity and a strong interest for learning new things are the leads of my work.
                 </p></div></div>

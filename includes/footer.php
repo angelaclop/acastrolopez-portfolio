@@ -1,6 +1,6 @@
 <footer>
             <div class="footer-links">
-                <a href="resume/acResume.pdf">resume</a>
+                <a href="resume/acResume2020.pdf">resume</a>
                 <div class="socialMedia">
                     <a href="https://www.linkedin.com/in/angela-castro-90ab66a4/" class="soMe-link" target="_blank">linkedin</a>
                     <a href="https://www.instagram.com/angela_clop/" class="soMe-link" target="_blank">instagram</a>
