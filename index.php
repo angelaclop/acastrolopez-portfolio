@@ -9,8 +9,8 @@ require('includes/nav.php');
  ?>
         <main>
             <div id="designSections">
-                <a href="product-design.php">PD <span>Product Design</span></a><hr>
-                <a href="visual-design.php">VD <span>Visual Design</span></a>
+                <p>Visual Designer focused on digital design, UX&#47;UI and branding.</p><hr>
+                <a href="visual-design.php">PROJECTS</a>
             </div>
             <section id='recentWork'>
                 <h1>recent work</h1>

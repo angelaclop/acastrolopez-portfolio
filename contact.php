@@ -21,8 +21,8 @@ require('includes/nav.php');
                 <div class="biggerSizes">
                   <h1>contact</h1>
                   <div>
-                  <a href=""><img src="images/icons/i_icon-1.svg" alt="Instagram Icon"style="width:30px; height: 30px;"></a>
-                  <a href=""><img src="images/icons/link-icon-1.svg" alt="LinkedIn Icon"style="width:30px; height: 30px;"></a></div>
+                  <a href="https://www.instagram.com/angela_clop/" target="_blank"><img src="images/icons/i_icon-1.svg" alt="Instagram Icon"style="width:30px; height: 30px;"></a>
+                  <a href="https://www.linkedin.com/in/angela-castro-90ab66a4/" target="_blank"><img src="images/icons/link-icon-1.svg" alt="LinkedIn Icon"style="width:30px; height: 30px;"></a></div>
                 </div> 
               <form action="contact-2.php" method="POST">
                   <label for="name">Name*</label>

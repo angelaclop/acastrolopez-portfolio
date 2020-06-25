@@ -119,29 +119,40 @@ main{
     box-shadow:1px 1px 5px rgba(64,64,64,0.30); 
 }
 #designSections a{
-    flex:1;
-    text-transform: uppercase;
+    width: 50%;
+    /* flex:1; */
+    /* text-transform: uppercase; */
     color: #474747;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     text-align: center;
     align-self: center;
-    font-size: 2.75rem;
+    font-size: 1.4rem;
     font-weight: 200;
     transition: 0.3s ease-in-out 0s;
 }
-#designSections a:first-of-type:hover{
-    color: #90AEBB;
+#designSections p{
+    width: 50%;
+    /* flex:1; */
+    color: #474747;
+    text-align: center;
+    align-self: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0.5rem;
 }
+/* #designSections a:first-of-type:hover{
+    color: #90AEBB;
+} */
 #designSections a:last-of-type:hover{
     color: #E46F6F;
 }
-#designSections a span{
+/* #designSections a span{
     font-size: 0.80rem;
     letter-spacing: 0.04em;
     font-weight: 400;
-}
+} */
 #designSections>hr{
     align-self: center;
     height: 45%;
@@ -886,6 +897,14 @@ margin-left: 1.5rem;
     width: 14%;
     margin: 0.75rem 0 0.5rem 0;
     }
+    #designSections a{
+        font-size: 2.5rem;    
+        }
+    #designSections p{
+        font-size: 0.95rem;
+        padding: 0.75rem;
+        line-height: 1.2rem;   
+    }
 }
 @media all and (min-width:970px){
     /*HOME*/
@@ -909,11 +928,16 @@ margin-left: 1.5rem;
     height: 35vh;
     }
     #designSections a{
-    font-size: 4rem;    
+    font-size: 3.15rem;    
     }
-    #designSections a span{
+    #designSections p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding: 1.15rem;    
+    }
+    /* #designSections a span{
     font-size:0.9rem;
-    }
+    } */
     #recentWork{
     max-width: 70%;
     margin: 0 auto 7rem;
@@ -1235,6 +1259,9 @@ margin-left: 1.5rem;
         height: 20rem;
         margin: 4rem auto 4rem;
     }
+    #designSections p{
+        padding: 1.2rem;    
+    }
     #recentWork{
         max-width: 50%;
         margin-bottom: 7rem;
@@ -1453,6 +1480,11 @@ margin-left: 1.5rem;
         max-width: 60%;
         height: 30rem;
         margin:4rem auto 3rem;
+    }
+    #designSections p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2.5rem;
     }
     #recentWork{
         max-width: 60%;
