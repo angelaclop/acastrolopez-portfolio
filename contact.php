@@ -40,7 +40,7 @@ require('includes/nav.php');
                       </g>
                     </svg> </div>
               </form>
-              <div class="socialMedia-links"><a href="">linkedin</a><a href="">instagram</a></div>
+              <div class="socialMedia-links"><a href="https://www.linkedin.com/in/angela-castro-90ab66a4/" target="_blank">linkedin</a><a href="https://www.instagram.com/angela_clop/" target="_blank">instagram</a></div>
             </div>
           </section>
       </main>
