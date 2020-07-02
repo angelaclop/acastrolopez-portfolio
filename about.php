@@ -18,12 +18,12 @@ require('includes/nav.php');
                     </g>
                   </svg> <span>back</span></a></div>
                   <div class="introAbout">
-                <img src="images/angela-castro-sq.jpg" alt="Angela Castro">
+                <img src="images/castroA.jpg" alt="Angela Castro">
                 <div><h2>Hola!</h2>
-                <p>I'm a passionate designer, a fan of the small details that make difference. Curiosity and a strong interest for learning new things are the leads of my work.
+                <p>I’m Angela Castro, a graphic designer from Colombia currently living in Calgary, Canada. Passionate about digital media, and always eager to learn something new.
                 </p></div></div>
-                <p>Every project is a new challenge and I am always eager to unroll the map and draw a new route every time. The nature of projects within the field of digital media fascinates me, by how diverse they are. Not only by their deliverables but also, by the professionals working behind them. In the end, you always learn something new, which I consider inspiring.</p>
-                <p>If you like my work and consider letting me play in your team, please contact me, I will be more than happy to get involved in your new quest. Or, if you just wish to share some life experiences, we can have some coffee and talk about design, biking or cats which I'm very passionate about.</p>
+                <p>As a designer, I am always curious about the thought process behind everything, a piece of furniture, an app, or a magazine. Design is always the sum of several elements that work well together, not just matching colors also, thought processes, user consideration, aesthetics and effective problem-solving. The core of my work is to pursue that ideal balance of elements in everything that I do, from branding strategy to an app. After all, design is the ground base upon which all these things take form. The cool thing is that design paths are never the same, they are always challenging and exciting.</p>
+                <p>Of course, all this hard work is always better with a good cup of coffee and a great song.</p>
                 <?php
 $title = "Angela Castro - Portfolio"; 
 require('includes/end-ofPage.php');

@@ -119,29 +119,40 @@ main{
     box-shadow:1px 1px 5px rgba(64,64,64,0.30); 
 }
 #designSections a{
-    flex:1;
-    text-transform: uppercase;
+    width: 50%;
+    /* flex:1; */
+    /* text-transform: uppercase; */
     color: #474747;
     display: flex;
     flex-direction: column;
     text-decoration: none;
     text-align: center;
     align-self: center;
-    font-size: 2.75rem;
+    font-size: 1.4rem;
     font-weight: 200;
     transition: 0.3s ease-in-out 0s;
 }
-#designSections a:first-of-type:hover{
-    color: #90AEBB;
+#designSections p{
+    width: 50%;
+    /* flex:1; */
+    color: #474747;
+    text-align: center;
+    align-self: center;
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0.5rem;
 }
+/* #designSections a:first-of-type:hover{
+    color: #90AEBB;
+} */
 #designSections a:last-of-type:hover{
     color: #E46F6F;
 }
-#designSections a span{
+/* #designSections a span{
     font-size: 0.80rem;
     letter-spacing: 0.04em;
     font-weight: 400;
-}
+} */
 #designSections>hr{
     align-self: center;
     height: 45%;
@@ -156,27 +167,29 @@ main{
     font-weight: 600;
     font-size: 1rem;
     color: #474747;
+    margin:0 0 1.5rem 0;
 }
 #recentWork div{
     display: flex;
+    display: -webkit-box; 
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-between;
 }
 #recentWork figure{
     margin: 0;
     max-width:90%;
     position: relative;
-    filter: grayscale(80%);
-    transition: all 0.3s ease-in-out;
 }
 #recentWork figure .projectTitle{
     max-width:95%;
     height: auto;
     text-decoration:none;
     color: #474747;
-    font-size: 0.65rem;
-    line-height: 0.85rem;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
     display: block;
-    margin: 0 auto;
+    margin: 0.5rem auto;
 } 
 #recentWork a {
 display: flex;
@@ -184,14 +197,20 @@ align-content: center;
 }
 #recentWork a img{
     width: 95%;
+    height: 95%;
     margin:0 auto;
+    box-shadow:0.5px 0.5px 8px rgba(64,64,64,0.10);
+    filter:grayscale(60%);
+    -webkit-filter: grayscale(60%);
+  -moz-filter: grayscale(60%);
+  -ms-filter: grayscale(60%);
+  transition: all 0.3s ease-in-out;
 }
-#recentWork figure:hover .colorOverlay{
-    position: absolute;
-    display: block;    
-}
- #recentWork div figure:hover{
-    filter: grayscale(0%);
+ #recentWork figure:hover img{
+    filter:grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
 }
 footer{
     width: 100%;
@@ -206,16 +225,23 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #fff;
+    color: #999;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.04rem;
+    transition: 0.3s ease;
+    font-weight: 400;
 }
 .footer-links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem 0;
+}
+.footer-links a:hover{
+    color:#FFF;
+    /* font-weight: 600; */
+    /* text-decoration: underline; */
 }
 .footer-links a:nth-of-type(1){
     order: 1;
@@ -337,9 +363,9 @@ footer a{
 .workGallery section figure a img{
     vertical-align: middle;
     width: 100%;
-    filter:url(product-desing.html#svg-color);
+    filter:url(product-desing.php#svg-color);
     -webkit-filter: url(#svg-color);
-    /* transition: all 1s; *//*not working*/
+    transition: all 0.3s ease;
 }
 .workGallery section figcaption, .workGallery-VD section figcaption /*name of the project*/{
     display:none;
@@ -611,6 +637,7 @@ footer a{
     padding: 1.25rem;
     box-shadow:1px 1px 5px rgba(64,64,64,0.30);
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     margin: 7rem auto 5rem;
 }
@@ -875,6 +902,14 @@ margin-left: 1.5rem;
     width: 14%;
     margin: 0.75rem 0 0.5rem 0;
     }
+    #designSections a{
+        font-size: 2.5rem;    
+        }
+    #designSections p{
+        font-size: 0.95rem;
+        padding: 0.75rem;
+        line-height: 1.2rem;   
+    }
 }
 @media all and (min-width:970px){
     /*HOME*/
@@ -898,11 +933,16 @@ margin-left: 1.5rem;
     height: 35vh;
     }
     #designSections a{
-    font-size: 4rem;    
+    font-size: 3.15rem;    
     }
-    #designSections a span{
+    #designSections p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding: 1.15rem;    
+    }
+    /* #designSections a span{
     font-size:0.9rem;
-    }
+    } */
     #recentWork{
     max-width: 70%;
     margin: 0 auto 7rem;
@@ -912,8 +952,10 @@ margin-left: 1.5rem;
     }
     #recentWork figure figcaption .projectTitle{
     font-size: 0.9rem;
-    border-left: 2px solid #474747;
+    /* border-left: 2px solid #474747; */
     padding-left: 0.35rem;
+    margin: 0.75rem 0;
+    line-height: 1.2rem;
     }
     footer {
     padding:1rem 15%;
@@ -1089,6 +1131,7 @@ margin-left: 1.5rem;
      }
      #about>.introAbout{
         flex-direction: row;
+        align-items: flex-start;
         margin: 2rem auto 1rem;
         width: 100%;
     }
@@ -1097,7 +1140,8 @@ margin-left: 1.5rem;
         max-width:60%;
     }
     #about .introAbout>img{
-       max-width:24%;
+       width:24%;
+       /* height: 24%; */
        margin: 0 1.2rem 0 0;
     }
     #about .introAbout div h2{
@@ -1142,6 +1186,7 @@ margin-left: 1.5rem;
     }
     #contact>div .biggerSizes{
         display: block flex;
+        display:-webkit-flex;
         flex-direction: column;
         justify-content: space-between;
         border-right: #000 solid 1px;
@@ -1221,6 +1266,9 @@ margin-left: 1.5rem;
         max-width: 50%;
         height: 20rem;
         margin: 4rem auto 4rem;
+    }
+    #designSections p{
+        padding: 1.2rem;    
     }
     #recentWork{
         max-width: 50%;
@@ -1354,9 +1402,10 @@ margin-left: 1.5rem;
      }
      #about .introAbout{
          margin: 2.5rem 0 0.5rem 0;
+         align-items: flex-end;
      }
      #about .introAbout>img{
-        max-width:30%;
+        width:30%; 
      }
      #about .introAbout div{
         justify-content: flex-end;
@@ -1368,6 +1417,7 @@ margin-left: 1.5rem;
     #about .introAbout div>p{
         font-size: 1.4rem;
         line-height: 2rem;
+        margin: 1rem 0 1rem 0;
     }
     #about p{
         font-size: 1rem;
@@ -1440,6 +1490,11 @@ margin-left: 1.5rem;
         max-width: 60%;
         height: 30rem;
         margin:4rem auto 3rem;
+    }
+    #designSections p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 2.5rem;
     }
     #recentWork{
         max-width: 60%;
@@ -1519,7 +1574,7 @@ margin-left: 1.5rem;
         max-width: 70%;
      }
     #about .introAbout>img{
-        max-width:28%;
+        width:28%;
         margin: 0 1.65rem 0 0; 
      }
      #about .introAbout div h2{
