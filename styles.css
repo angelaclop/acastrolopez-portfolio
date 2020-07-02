@@ -178,7 +178,7 @@ main{
 }
 #recentWork figure{
     margin: 0;
-    max-width:90%;
+    width:90%;
     position: relative;
 }
 #recentWork figure .projectTitle{
@@ -197,6 +197,7 @@ align-content: center;
 }
 #recentWork a img{
     width: 95%;
+    height: 95%;
     margin:0 auto;
     box-shadow:0.5px 0.5px 8px rgba(64,64,64,0.10);
     filter:grayscale(60%);
@@ -378,7 +379,7 @@ footer a{
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.03rem;
-    width:100%;
+    max-width:95%;
   }
   .workGallery section figure:hover a img, .workGallery-VD section figure:hover a img{
     filter: url(#svg-color-hover);
@@ -397,8 +398,11 @@ footer a{
     width:100%;
     margin:1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    display:-ms-grid;
+    grid-template-column: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
     grid-gap: 0.75rem;
+    -ms-grid-row:auto 0.75rem auto 0.75rem auto;
     grid-template-areas:
     "header2 item2VD"
     "item1VD item3VD"
